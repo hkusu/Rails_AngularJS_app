@@ -46,3 +46,5 @@ gem 'rails_best_practices', group: :development
 gem 'pry-rails', group: [:development, :test]
 gem 'rspec-rails', group: [:development, :test]
 gem 'factory_girl_rails', group: [:development, :test]
+
+gem 'rack-cors', :require => 'rack/cors', group: [:development, :test]
