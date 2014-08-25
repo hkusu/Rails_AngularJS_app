@@ -1,9 +1,6 @@
-# このリポジトリについて
+Qiitaへの投稿(http://)で作成したソースです。
 
-Qiitaへの投稿時に作成したソースです。
-投稿URL：http://
-
-# 手元で再現する方法
+手元で再現する場合は、次のようにしてください。
 
 ```
 $ git clone https://github.com/hkusu/Rails_AngularJS_app.git
