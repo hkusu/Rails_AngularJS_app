@@ -1,26 +1,31 @@
 class PeopleController < ApplicationController
   before_action :set_person, only: [:show, :edit, :update, :destroy]
 
+  # ADD:認証は今回はスキップ。。
+  skip_before_action :verify_authenticity_token
+
   # GET /people
   # GET /people.json
   def index
     @people = Person.all
+    # ADD:一覧で JSON を返す
     render json: @people
   end
 
   # GET /people/1
   # GET /people/1.json
-  def show
-  end
+  # ADD:今回は使用しないのでコメントアウト
+  #def show
+  #end
 
   # GET /people/new
-  # 今回は使用しないのでコメントアウト
+  # ADD:今回は使用しないのでコメントアウト
   #def new
   #  @person = Person.new
   #end
 
   # GET /people/1/edit
-  # 今回は使用しないのでコメントアウト
+  # ADD:今回は使用しないのでコメントアウト
   #def edit
   #end
 
@@ -42,17 +47,18 @@ class PeopleController < ApplicationController
 
   # PATCH/PUT /people/1
   # PATCH/PUT /people/1.json
-  def update
-    respond_to do |format|
-      if @person.update(person_params)
-        format.html { redirect_to @person, notice: 'Person was successfully updated.' }
-        format.json { render :show, status: :ok, location: @person }
-      else
-        format.html { render :edit }
-        format.json { render json: @person.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # ADD:今回は使用しないのでコメントアウト
+  #def update
+  #  respond_to do |format|
+  #    if @person.update(person_params)
+  #      format.html { redirect_to @person, notice: 'Person was successfully updated.' }
+  #      format.json { render :show, status: :ok, location: @person }
+  #    else
+  #      format.html { render :edit }
+  #      format.json { render json: @person.errors, status: :unprocessable_entity }
+  #    end
+  #  end
+  #end
 
   # DELETE /people/1
   # DELETE /people/1.json
