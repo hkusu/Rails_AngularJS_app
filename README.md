@@ -1,4 +1,4 @@
-Qiitaへの投稿(http://)で作成したソースです。
+Qiitaへの投稿(http://qiita.com/hkusu/items/b34f684b49751d9c9abd)で作成したソースです。
 
 手元で再現する場合は、次のようにしてください。
 
